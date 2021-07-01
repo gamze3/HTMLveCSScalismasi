@@ -1,0 +1,29 @@
+
+        h3{
+            color: rgb(0, 139, 58);
+            border: 5px solid #005;
+        }
+
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size:  50px;px;
+
+    font-style: italic;
+
+    font-weight: 2;
+}
+
+/* "#" diyez işareti ile id'lere ulaşılır css'de, class'lara ise "." nokta kullanılarak olaşılır. */
+
+#last{
+    color:bisque;
+}
+
+.medium{
+    color: blueviolet;
+}
+
+body{
+    background-color: aqua;
+}

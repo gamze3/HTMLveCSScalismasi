@@ -1,0 +1,90 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr-TR" >
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title> G.B'nin 7. dersi </title>
+</head>
+
+<body>
+
+    <!--action: formu bir sunucuya göndermek istersek kullanılır; göndermek istemiyorsak "#" kullanırız.-->
+    <!--"POST" methodu güvenlik açığı oluşturmamak için kullanılır. Aynı işlem "GET" methoduyla da yapılabilir 
+ancak (? çıkıyor adres çubuğunda)yani nereye göndereceğimizi belirtmediğimiz için ve belirtsek bile  GET methoduyla form gönderme işlemi güvenli değildir
+çünkü adres çubuğunda bilgiler görünmektedir.-->
+
+<form name="isim1" id="isim1" method="GET" action="#" >
+
+   
+   
+<!--"input" etiketi veri girilebilecek bir input alanı oluşturur.-->
+<!--username, password ve email belli kalıplar barındıran anahtar kelimelerdir. Örneğin kullanıcıyı geçerli bir mail adresi olana kadar uyaracaktır bu anahtar kelime -->
+ <!--"maxlength" etiketi maximum kaç karakter girilebildiğini belirtebilmemizi sağlar. Bu eşik değer üzerinde karakter girilemez. -->  
+<p><input type="text"name="username" id="username" autocomplete="off" maxlength="4" value="admin" /></p>
+
+<!-- "placeholder" etiketi kullanıcılara formun ilgili yerine hangi bilgi girilmesi gerektiğine dair bilgi veren yazılardır.(silik yazılar veri girilince kaybolan) -->
+<!--"size" etiketi form hücresinin uzunluğunu,büyüklüğünü ayarlamamızı sağlar.-->
+
+<!--"onclik" ile yazılan etiket grubu ilgili hücreye tıklandığında pancere açılıp yazılan stringi bastırır.-->
+<p><input type="password"name="password" id="password" autocomplete="off" placeholder="Lütfen şifrenizi giriniz." size="50" onclick="alert('Merhaba Java Script!')" /></p>
+
+<!--"disabled" etiketi formun ilgili hücresini devre dışı (pasif) bırakır. Herhangi bir veri giremez kullanıcı.-->
+
+<p> <input type="email" name="email" id="email" disabled="disabled"/></p>
+
+<!--"hidden" etiketi sunucuya gizli vei göndermeye yarar.-->
+
+<p><input type="hidden" value="123456" /></p>
+
+<!-- "url" türünde input oluşturulduğunda ilgili input sınırlandırılmış olur. URL formatı dışında format kabul edilmez. -->
+
+<p> <input type="url" name="url" id="url"> </p>
+
+<!--"textarea" etiketi metin işlemek çin kullanılır.-->
+
+<p> <textarea name="metin"  id="metin" rows="10" cols="25"></textarea>  </p>
+
+<!-- "checkbox" etiketi işaretlenebilir seçenekleri oluşturmöak için kullanılır. -->
+<p> <input type="checkbox" value="0" />Bay </p>
+<p> <input type="checkbox" value="1"/>Bayan </p>
+
+
+<p> <label>
+<input type="radio" value="0" name="chkck1" id="c1"/> MAVİ
+</label>
+<label>
+    <input type="radio" value="1" name="chck1" id="c2"/> KIRMIZI
+</label>
+</p>
+<!-- "select" etiketi seçenek oluşturmak için kullanılır yani seçilecek bir çubuk oluşturur. "selected"'lı kısım seçim sunulan yerde örneğin "seçiniz..."yazısının çıkması için kullanılır. -->
+<p>
+<select>
+    <option value="-1" selected> Seçiniz...</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>PHP</option>
+<option>LARAVEL</option>
+<option>C++</option>
+
+</select>
+
+</p>
+
+
+<!--"submit" etiketi sunucuya göndermek üzere bir buton oluşturmaya yarar.-->
+
+<input type="submit" value="SEND"/>
+
+<!--"button" etiketi sunucuya gönderme işlemi yapılmayacaksa kullanılır.(javascript için de idealdir.)-->
+
+<input type="button" value="BUTON"/>
+
+<input type="reset"/>
+
+</form>
+
+</body>
+
+</html>
+
+<!--7. video 8:58 de kaldım-->

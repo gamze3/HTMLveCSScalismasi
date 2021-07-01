@@ -1,0 +1,44 @@
+
+/* "text-align"  etiketi web sitesinde h2 başlığının konumunu belirlemek için kullanılır.*/
+
+h2{
+    text-align: center;
+}
+
+/* "." dan sonra kaynak kodda verilen class ismi yazılmalı! */
+/* "margin-bottom" etiketi paragrafın altından boşluk bırakmak için kullanılır.(margin etiketleri boşluk(aralık) için kullanılır.Margin çerçeve için boşluk.) 
+Yalnızca "margin" yazarsak her tarafından boşluk bırakır.(yukarı, alt, üst, sağ, sol)*/
+
+/* padding çerçeve içi boşluk için kullanılır.*/
+
+.change{
+
+    border: 25px solid green;
+    background-color: burlywood;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+#last{
+
+    border: 10px solid brown;
+    background-color: aqua;
+}
+
+.link a{
+    color:rgb(255, 0, 55);
+
+    text-decoration:dotted;
+}
+/* "hover" etiketi mause linkin üzerine geldiğinde linkin rengini ve dekorasyonunu değiştimek için kullanılıyor.  */
+.link a:hover{
+    color: greenyellow;
+    text-decoration: overline;
+
+}
+
+.link a:active{
+    
+    background-color: chocolate;
+    color:bisque ;
+}
